@@ -1,0 +1,89 @@
+.BuildControls {
+  width: 60%;
+  background-color:honeydew;
+  color: rgb(249, 62, 41);
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  box-shadow: 0 2px 1px lightgoldenrodyellow;
+  margin: auto;
+  padding: 10px 10px 30px 10px;
+}
+
+.ButtonsGroup {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ButtonsGroup:first-of-type {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  /* justify-content: flex-start; */
+}
+
+.ButtonsGroup:last-of-type {
+  display: flex;
+  flex-flow: column;
+  /* align-items: flex-start; */
+  /* justify-content: flex-start; */
+}
+
+.ResetButton {
+  background-color: rgb(176, 197, 223);
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #f2ff01;
+  color: #fffefd;
+  font-family: inherit;
+  font-size: 1.2em;
+  min-width: 130px;
+  padding: 15px 30px;
+  box-shadow: 2px 2px 2px #fff3da;
+}
+
+.ResetButton:hover, .OrderButton:active {
+  background-color: #A0DB41;
+  border: 1px solid #966909;
+  color: #966909;
+}
+
+.ResetButton:disabled {
+  background-color: #C7C6C6;
+  cursor: not-allowed;
+  border: 1px solid #ccc;
+  color: #888888;
+}
+
+.OrderButton {
+  background-color: rgb(218, 53, 64);
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #f2ff01;
+  color: #ffc341;
+  font-family: inherit;
+  font-size: 1.2em;
+  min-width: 130px;
+  padding: 15px 30px;
+  box-shadow: 2px 2px 2px #fff3da;
+}
+
+.OrderButton:hover, .OrderButton:active {
+  background-color: #A0DB41;
+  border: 1px solid #966909;
+  color: #966909;
+}
+
+.OrderButton:disabled {
+  background-color: #C7C6C6;
+  cursor: not-allowed;
+  border: 1px solid #ccc;
+  color: #888888;
+}
+
+.OrderButton:not(:disabled) {
+  animation: enable 0.3s linear;
+}

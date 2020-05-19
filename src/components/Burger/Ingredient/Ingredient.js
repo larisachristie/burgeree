@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classes from './Ingredient.css';
+import classes from './Ingredient.module.css';
 
 const ingredient = (props) => {
   let bIngredient = null;
@@ -17,7 +17,7 @@ const ingredient = (props) => {
       );
       break;
     case ('meat'):
-      bIngredient = <div style={{ backgroundColor: 'red', width: '10px', height: '10px'}} className={classes.Meat}></div>;
+      bIngredient = <div className={classes.Meat}></div>;
       break;
     case ('cheese'):
       bIngredient = <div className={classes.Cheese}></div>;
@@ -28,10 +28,12 @@ const ingredient = (props) => {
     case ('bacon'):
       bIngredient = <div className={classes.Bacon}></div>;
       break;
+    case ('fish'):
+      bIngredient = <div className={classes.Fish}></div>;
+      break;
     default:
       bIngredient = null;
   }
-  console.log(bIngredient);
   return bIngredient;
 };
 
